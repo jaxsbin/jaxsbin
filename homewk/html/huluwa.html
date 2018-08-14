@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ Title }}</title>
+    <style>
+        table{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1> 不朽葫芦娃</h1>
+    <table border="1px" cellspacing="0px" cellpadding="0px">
+
+        <tr>
+            <td>英雄</td><td>属性</td><td>出生日期</td><td>身高</td><td>技能</td>
+        </tr>
+        {% for i in person %}
+        <tr>
+            <td>{{ i.name }}</td><td>{{ i.atrribute }}</td><td>{{ i.birthday }}</td><td>{{ i.height }}</td><td>{{ i.skill }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+
+</body>
+</html>
